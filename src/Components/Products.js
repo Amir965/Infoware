@@ -66,7 +66,7 @@ By Camilleallen78705-frwa01"
           By Camilleallen"
         />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

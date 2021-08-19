@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <h1 style={{ color: "black" }}>DenyDesign.</h1>
+            <h1>DenyDesign.</h1>
           </Link>
 
           <button className="nav-toggle" onClick={toggleLinks}>

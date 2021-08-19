@@ -40,11 +40,11 @@ const Footer = () => {
           <div className="thank">
             <span>THANK YOU</span>
             <p>
-              Thank you to the wonderful folks over <br />
+              Thank you to the wonderful folks over
               at Herbivore for letting us use their
-              <br /> beautiful imagery in this demo. Head over <br />
+               beautiful imagery in this demo. Head over
               to their store to shop their full catalog of
-              <br /> amazing products.
+               amazing products.
             </p>
           </div>
           <div className="newsletter">

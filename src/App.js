@@ -1,17 +1,18 @@
-import React from 'react'
-import './App.css';
-import Navbar from './Components/Navbar';
+import React from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import Home from "./Components/Home"
-import Login from "./Components/Login"
-import SignUp from "./Components/SignUp"
-import Products from "./Components/Products"
-import Collections from "./Components/Collections"
-import OurStory from './Components/OurStory';
-import Art from './Components/Art';
-import WholeSale from './Components/WholeSale';
-import NavbarSignUp from './Components/NavbarSignUp';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Components/Home";
+import Login from "./Components/Login";
+import SignUp from "./Components/SignUp";
+import Products from "./Components/Products";
+import Collections from "./Components/Collections";
+import OurStory from "./Components/OurStory";
+import Art from "./Components/Art";
+import WholeSale from "./Components/WholeSale";
+import NavbarSignUp from "./Components/NavbarSignUp";
+import Description from "./Components/Description";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/story" component={OurStory} />
           <Route path="/art" component={Art} />
           <Route path="/wholesale" component={WholeSale} />
+          <Route path="/description" component={Description} />
         </Switch>
       </Router>
     </div>
