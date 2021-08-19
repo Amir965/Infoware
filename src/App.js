@@ -23,8 +23,14 @@ function App() {
             <Home />
           </Route>
           <Route path="/login" component={Login} />
-          <Route path="/signUp"><NavbarSignUp/><SignUp/></Route>
-          <Route path="/products"><Navbar/><Products/></Route>
+          <Route path="/signUp">
+            <NavbarSignUp />
+            <SignUp />
+          </Route>
+          <Route path="/products">
+            <Navbar />
+            <Products />
+          </Route>
           <Route path="/collections" component={Collections} />
           <Route path="/story" component={OurStory} />
           <Route path="/art" component={Art} />
