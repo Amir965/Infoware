@@ -1,0 +1,85 @@
+.footer{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: auto;
+padding: 20px 20px;
+}
+.company p {
+    margin-top: 20px;
+}
+.icon p {
+    margin-top: 20px;
+}
+.thank p{
+    margin-top: 20px;
+}
+.newsletter input{
+    margin-top: 20px;
+    height: 34px;
+    padding: 5px;
+}
+.email button{
+    background-color: midnightblue;
+    color: white;
+    border: solid;
+    /* height: 38px; */
+    padding: 5px;
+}
+
+.copy{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.newsletter input{
+    margin-top: 20px;
+    height: 34px;
+    width: 150px;
+    padding: 5px;
+}
+
+.box{
+    border: 1px solid;
+    padding: 5px;
+    width: 60px;
+    height: 40px;
+    margin-right: 50px;
+}
+.copy p{
+    margin-left: 60px;
+}
+
+/* mobile view */
+
+@media screen and (max-width:500px) {
+.footer{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin: auto;
+padding: 20px 20px;
+} 
+.thank br{
+    display: none;
+}
+
+.copy{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-around ;
+
+}
+.copy p{
+    margin-left: 10px;
+}
+.box{
+    
+    border: 1px solid;
+    width: 60px;
+    
+}
+
+}

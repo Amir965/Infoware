@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Navbar from './Components/Navbar';
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import Home from "./Components/Home"
+import Login from "./Components/Login"
+import SignUp from "./Components/SignUp"
+import Products from "./Components/Products"
+import Collections from "./Components/Collections"
+import OurStory from './Components/OurStory';
+import Art from './Components/Art';
+import WholeSale from './Components/WholeSale';
+import NavbarSignUp from './Components/NavbarSignUp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Navbar />
+            <Home />
+          </Route>
+          <Route path="/login" component={Login} />
+          <Route path="/signUp"><NavbarSignUp/><SignUp/></Route>
+          <Route path="/products"><Navbar/><Products/></Route>
+          <Route path="/collections" component={Collections} />
+          <Route path="/story" component={OurStory} />
+          <Route path="/art" component={Art} />
+          <Route path="/wholesale" component={WholeSale} />
+        </Switch>
+      </Router>
     </div>
   );
 }
