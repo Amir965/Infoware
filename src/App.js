@@ -20,7 +20,7 @@ function App() {
     ReactGa.initialize("G-LKFG2QVSW5");
 
     //to report page view
-    ReactGa.pageview('/')
+    ReactGa.pageview(window.location.pathname + window.location.search)
   }, [])
   
   return (
