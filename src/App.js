@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 
@@ -13,8 +13,16 @@ import Art from "./Components/Art";
 import WholeSale from "./Components/WholeSale";
 import NavbarSignUp from "./Components/NavbarSignUp";
 import Description from "./Components/Description";
-
+import ReactGa from "react-ga"
 function App() {
+
+  useEffect(() => {
+    ReactGa.initialize("G-LKFG2QVSW5");
+
+    //to report page view
+    ReactGa.pageview('/')
+  }, [])
+  
   return (
     <div>
       <Router>
